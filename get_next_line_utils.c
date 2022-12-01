@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/01 11:40:49 by rerayyad          #+#    #+#             */
+/*   Updated: 2022/12/01 11:40:52 by rerayyad         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"get_next_line.h"
 
 int	ft_strlen(char *str)
@@ -106,5 +118,31 @@ char	*ft_line(char *src)
 	if (src[i] == '\n')
 		str[++i] = '\n';
 	str[i] = '\0';
+	return (str);
+}
+
+char	*ft_saver(char *stock)
+{
+	char	*str;
+	int		i;
+	int		j;
+
+	i = 0;
+	j = 0;
+	while (stock[i] && stock[i] != '\n')
+		i++;
+	if (!stock[i])
+	{
+		free(stock);
+		return (0);
+	}
+	str = (char *)malloc(sizeof (char) * ft_strlen(stock));
+	if (!str)
+		return (NULL);
+	i++;
+	while (stock[i])
+		str[j++] = stock[i++];
+	str[j] = '\0';
+	free(stock);
 	return (str);
 }

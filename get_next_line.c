@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/28 14:52:10 by marvin            #+#    #+#             */
-/*   Updated: 2022/11/30 16:11:28 by marvin           ###   ########.fr       */
+/*   Created: 2022/12/01 10:55:19 by rerayyad          #+#    #+#             */
+/*   Updated: 2022/12/01 11:41:37 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,6 @@ char    *get_next_line(int fd)
     if (!stock)
         return (NULL);
     str = ft_line(stock);
-    free(stock);
-    stock = NULL;
+    stock = ft_saver(stock);
     return (str);
 }
