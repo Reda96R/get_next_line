@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:41:01 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/01 11:41:06 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/01 13:12:45 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_H
 
 # ifndef BUFFER_SIZE
-# define BUFFER_SIZE 10
+# define BUFFER_SIZE 2
 # endif
 
 # include <stdlib.h>

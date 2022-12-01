@@ -4,13 +4,13 @@
 int	main()
 {
 	char	*l;
-	char	*k;
-	char	*m;
+	int i = 0;
 	int	fd = open("txt.txt", O_RDONLY);
-	l = get_next_line(fd);
-	k = get_next_line(fd);
-	m = get_next_line(fd);
-	printf("%s", l);
-	printf("%s", k);
-	printf("%s", m);
+	while (i < 10)
+	{
+		i++;
+		l = get_next_line(fd);	
+		printf("%s", l);
+		free(l);
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:40:49 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/01 11:40:52 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/01 11:49:50 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,7 +116,7 @@ char	*ft_line(char *src)
 		i++;
 	}
 	if (src[i] == '\n')
-		str[++i] = '\n';
+		str[i++] = '\n';
 	str[i] = '\0';
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:55:19 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/01 11:41:37 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/01 13:18:06 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,12 @@ char    *ft_fill(char *stock, int fd)
 
     str = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
     if (!str)
+    {
+        free(str);
         return (NULL);
+    }
     i = 1;
-    while (i > 0 && !ft_strchr(stock, '\n'))
+    while (i && !ft_strchr(stock, '\n'))
     {
         i = read(fd, str, BUFFER_SIZE);
         if (i < 0)
@@ -32,7 +35,6 @@ char    *ft_fill(char *stock, int fd)
         str[i] = '\0';
         stock = ft_strjoin(stock, str);
     }
-    //printf("test%s\n", stock);
     free(str);
     return (stock);
 }
@@ -49,5 +51,11 @@ char    *get_next_line(int fd)
         return (NULL);
     str = ft_line(stock);
     stock = ft_saver(stock);
+    if (!str[0])
+    {
+        free(str);
+        free (stock);
+        return (NULL);
+    }
     return (str);
 }
