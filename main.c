@@ -5,8 +5,8 @@ int	main()
 {
 	char	*l;
 	int i = 0;
-	int	fd = open("txt.txt", O_RDONLY);
-	while (i < 10)
+	int	fd = open("test.txt", O_RDONLY);
+	while (i <= 10)
 	{
 		i++;
 		l = get_next_line(fd);	
@@ -14,3 +14,4 @@ int	main()
 		free(l);
 	}
 }
+
