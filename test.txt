@@ -1,9 +1,6 @@
-
 abcd
 efgh
 ijkl
-
-
 
 efgh
 
