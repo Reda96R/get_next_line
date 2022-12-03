@@ -38,11 +38,11 @@ char    *ft_fill(char *stock, int fd)
     free(str);
     return (stock);
 }
-
+#include<limits.h>
 char    *get_next_line_bonus(int fd)
 {
     char    *str;
-    static char *stock[OPEN_MAX];
+    static char *stock[4096];
 
     if (fd < 0 || BUFFER_SIZE <= 0)
         return (0);
