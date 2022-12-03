@@ -55,7 +55,7 @@ char	*get_next_line_bonus(int fd)
 	{
 		free(str);
 		free (stock[fd]);
-		return (NULL)
+		return (NULL);
 	}
 	return (str);
 }

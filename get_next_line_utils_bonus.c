@@ -104,7 +104,7 @@ char	*ft_saver(char *stock)
 		free(stock);
 		return (0);
 	}
-	str = (char *)malloc(sizeof (char) * ft_strlen(stock));
+	str = (char *)malloc(sizeof (char) * ft_strlen(stock) - i + 1);
 	if (!str)
 		return (NULL);
 	i++;
