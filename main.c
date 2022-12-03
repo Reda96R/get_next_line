@@ -13,8 +13,8 @@ int	main()
 	while (i <= 4)
 	{
 		i++;
-		l = get_next_line_bonus(fd);	
-		k = get_next_line_bonus(fd1);	
+		l = get_next_line(fd);	
+		k = get_next_line(fd1);	
 		printf("fd : %s", l);
 		printf("fd1: %s", k);
 		free(l);

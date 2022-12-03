@@ -20,14 +20,13 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include <stdio.h>
 
-char    *get_next_line(int fd);
-char    *ft_fill(char *stock, int fd);
-int     ft_strlen(char *str);
-int     ft_strchr(char *str, int c);
-char    *ft_line(char *src);
-char    *ft_strjoin(char *s1, char *s2);
+char	*get_next_line(int fd);
+char	*ft_fill(char *stock, int fd);
+int	ft_strlen(char *str);
+int	ft_strchr(char *str, int c);
+char	*ft_line(char *src);
+char	*ft_strjoin(char *s1, char *s2);
 char	*ft_saver(char *stock);
 
 #endif

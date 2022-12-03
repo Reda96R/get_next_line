@@ -40,8 +40,8 @@ int	ft_strchr(char *str, int c)
 
 char	*ft_strjoin(char *s1, char *s2)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
+	int	j;
 	char	*str;
 
 	i = 0;
@@ -66,7 +66,7 @@ char	*ft_strjoin(char *s1, char *s2)
 
 char	*ft_line(char *src)
 {
-	int		i;
+	int	i;
 	char	*str;
 
 	i = 0;
@@ -92,8 +92,8 @@ char	*ft_line(char *src)
 char	*ft_saver(char *stock)
 {
 	char	*str;
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
