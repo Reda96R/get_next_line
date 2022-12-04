@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:55:19 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/04 12:36:18 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 13:17:08 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_fill(char *stock, int fd)
 		if (i < 0)
 		{
 			free (str);
+			free(stock);
 			return (NULL);
 		}
 		str[i] = '\0';
@@ -39,7 +40,7 @@ char	*ft_fill(char *stock, int fd)
 	return (stock);
 }
 
-char	*get_next_line_bonus(int fd)
+char	*get_next_line(int fd)
 {
 	char		*str;
 	static char	*stock[OPEN_MAX];

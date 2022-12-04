@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:50:31 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/04 12:42:20 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 13:20:26 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # include <fcntl.h>
 # include <limits.h>
 
-char	*get_next_line_bonus(int fd);
+char	*get_next_line(int fd);
 char	*ft_fill(char *stock, int fd);
 int		ft_strlen(char *str);
 int		ft_strchr(char *str, int c);
