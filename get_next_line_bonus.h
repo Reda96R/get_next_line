@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:50:31 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/04 13:20:26 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 14:28:11 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 
 char	*get_next_line(int fd);
 char	*ft_fill(char *stock, int fd);
-int		ft_strlen(char *str);
+size_t		ft_strlen(char *str);
 int		ft_strchr(char *str, int c);
 char	*ft_line(char *src);
 char	*ft_strjoin(char *s1, char *s2);

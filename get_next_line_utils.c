@@ -6,16 +6,18 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:40:49 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/04 12:39:08 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 14:28:53 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 
+	if (!str)
+		return (0);
 	i = 0;
 	while (str[i])
 		i++;
@@ -40,24 +42,23 @@ int	ft_strchr(char *str, int c)
 
 char	*ft_strjoin(char *s1, char *s2)
 {
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 	char	*str;
 
 	i = 0;
 	j = 0;
-	if (s1 == NULL)
-	{
-		s1 = (char *)malloc(sizeof(char) * 1);
-		s1[0] = '\0';
-	}
+
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (str == NULL)
+	if (!str)
+	{
+		free(s1);
 		return (NULL);
-	while (s1[j] != '\0')
+	}
+	while (s1 && s1[j] != '\0')
 		str[i++] = s1[j++];
 	j = 0;
-	while (s2[j] != '\0')
+	while (s2 && s2[j] != '\0')
 		str[i++] = s2[j++];
 	str[i] = '\0';
 	free(s1);
