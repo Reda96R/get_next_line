@@ -6,11 +6,11 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 11:40:49 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/02 16:00:23 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 12:39:08 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"get_next_line.h"
+#include "get_next_line.h"
 
 int	ft_strlen(char *str)
 {
@@ -28,7 +28,7 @@ int	ft_strchr(char *str, int c)
 
 	i = 0;
 	if (!str)
-		return(0);
+		return (0);
 	while (str[i])
 	{
 		if (str[i] == (char)c)
@@ -40,8 +40,8 @@ int	ft_strchr(char *str, int c)
 
 char	*ft_strjoin(char *s1, char *s2)
 {
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 	char	*str;
 
 	i = 0;
@@ -66,7 +66,7 @@ char	*ft_strjoin(char *s1, char *s2)
 
 char	*ft_line(char *src)
 {
-	int	i;
+	int		i;
 	char	*str;
 
 	i = 0;
@@ -92,8 +92,8 @@ char	*ft_line(char *src)
 char	*ft_saver(char *stock)
 {
 	char	*str;
-	int	i;
-	int	j;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;

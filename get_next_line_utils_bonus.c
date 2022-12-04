@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 16:39:21 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/02 16:52:53 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 12:39:34 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_strchr(char *str, int c)
 
 	i = 0;
 	if (!str)
-		return(0);
+		return (0);
 	while (str[i])
 	{
 		if (str[i] == (char)c)

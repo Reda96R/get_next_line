@@ -6,7 +6,7 @@
 /*   By: rerayyad <rerayyad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/01 10:55:19 by rerayyad          #+#    #+#             */
-/*   Updated: 2022/12/02 16:01:22 by rerayyad         ###   ########.fr       */
+/*   Updated: 2022/12/04 12:35:13 by rerayyad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_fill(char *stock, int fd)
 {
-	int	i;
+	int		i;
 	char	*str;
 
 	str = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));

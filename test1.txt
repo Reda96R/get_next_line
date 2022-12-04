@@ -1,6 +1,7 @@
-qwertyuiopsdfghjklzxcvbnm,
-qwertyuiopdfghjkl;
-sdfghjklxcvbnm
-wertyuiosdfghjk
-sdfghjkwetyuierty
-wertyufgh
+qwertyuiop
+asdfghjkl
+
+zxcvbnm,
+qwertyuioqwertyuio
+
+
